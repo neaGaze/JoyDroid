@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/preference_sensitivity">
+        <EditTextPreference 
+            android:title="@string/text_accelerometer_sensitivity"          
+            android:defaultValue="0.7"
+            android:inputType="numberDecimal"
+            android:key="text_accelerometer_sensitivity" />
+              </PreferenceCategory>
+    <PreferenceCategory android:title="@string/text_map_key">
+            <PreferenceScreen android:title="@string/text_buttons"><PreferenceCategory android:title="@string/text_map_key"><EditTextPreference android:title="@string/map_x" android:key="map_x" android:defaultValue="w" />
+            <EditTextPreference android:defaultValue="s" android:title="@string/map_y" android:key="map_y" />
+            <EditTextPreference android:defaultValue="a" android:title="@string/map_a" android:key="map_a" />
+            <EditTextPreference android:defaultValue="d" android:title="@string/map_b" android:key="map_b" />
+            </PreferenceCategory>
+            </PreferenceScreen>
+        </PreferenceCategory>
+    
+    
+    <PreferenceCategory android:title="@string/text_sensor">
+        <CheckBoxPreference android:title="@string/text_enable_sensor" android:key="disable_sensor" android:defaultValue="false"/>
+    </PreferenceCategory>
+    
+</PreferenceScreen>

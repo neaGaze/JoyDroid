@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.joydroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7"  android:targetSdkVersion="14"/>
+    <uses-permission android:name="android.permission.SET_ORIENTATION"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.screen.landscape"/>
+    
+
+    <application
+        android:icon="@drawable/logo"
+        android:name=".client.app.Joydroid"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".JoyDroidActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation= "landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation= "landscape">
+            
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation= "landscape">
+            
+        </activity>
+        <activity
+            android:name=".PreferencesActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation= "landscape">
+            
+        </activity>
+        <activity
+			android:label="@string/text_connections"
+			android:name=".client.connection.activity.ConnListActivity"
+			android:screenOrientation= "landscape">          
+        </activity>
+		
+		<activity
+			android:label="@string/text_connections"
+			android:name=".client.connection.activity.ConnEditActivity"
+			android:screenOrientation= "landscape">
+		</activity>
+		
+		<activity
+			android:name=".client.connection.activity.ConnWifiEditActivity"
+			android:label="@string/text_wifi"
+			android:screenOrientation= "landscape">
+
+		</activity>
+    </application>
+
+</manifest>

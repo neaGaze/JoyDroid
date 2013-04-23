@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <fragment
+        android:id="@+id/custom_fragment"
+        android:name="android.support.v4.app.DialogFragment"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+        
+        </fragment>
+ 
+    <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/custom_fragment"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="96dp"
+                android:layout_height="83dp"
+                android:layout_marginLeft="75dp"
+                android:layout_weight="0.00" >
+
+
+            <Button
+                android:id="@+id/button_y1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:clickable="true"
+                android:padding="10dp" />
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="83dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.00" >
+
+
+            <Button
+                android:id="@+id/button_b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_b2"
+                android:clickable="true"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="65dp"
+                android:layout_height="83dp"
+                android:layout_marginLeft="05dp"
+                android:layout_weight="0.00" 
+                android:layout_alignBottom="@+id/button_b2"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button_b2"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout5"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/linearLayout5"
+                android:orientation="vertical" >
+
+
+                <Button
+                    android:id="@+id/button_a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button_a3"
+                    android:clickable="true"
+                    android:padding="0dp" />
+
+            </LinearLayout>
+	
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="96dp"
+                android:layout_height="83dp"
+                android:layout_marginLeft="75dp"
+                android:layout_weight="0.00" >
+
+                
+
+				<Button
+				    android:id="@+id/button_x4"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:background="@drawable/custom_button_x4"
+				    android:clickable="true"
+				    android:padding="0dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+</RelativeLayout>
